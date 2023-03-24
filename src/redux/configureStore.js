@@ -3,14 +3,14 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { userReducer } from './user/user';
 import { reservationDetailsReducer, reservationReducer, myReservationReducer } from './reservation/reserve';
-import fetchCars, { carsReducer } from './cars/car';
+import fetchCars, { carReducer } from './cars/car';
 
 const rootReducer = combineReducers({
   user: userReducer,
   reservationReducer,
   myReservation: myReservationReducer,
   reservationDetails: reservationDetailsReducer,
-  cars: carsReducer,
+  cars: carReducer,
 });
 
 const middlewares = [thunk];
