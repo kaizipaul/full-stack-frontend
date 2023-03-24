@@ -5,8 +5,8 @@ const initialState = {
   email: '',
   loggedIn: 'out',
   userId: '',
-  signedUp: false
-}
+  signedUp: false,
+};
 
 // Constant Variables as Action Creators
 const SIGN_UP = 'reserve_a_car/SIGNUP';
@@ -80,7 +80,7 @@ export const getSignUpInfo = (info) => async (dispatch) => {
       }),
     );
   }
-}
+};
 
 export const getSigninInfo = (info) => async (dispatch) => {
   const { email, password } = info;

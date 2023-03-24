@@ -1,4 +1,5 @@
-import { baseUrl } from "../api";
+import axios from 'axios';
+import { baseUrl } from '../api';
 
 const GET_RESERVATION_REQUEST = 'GET_RESERVATION_REQUEST';
 const GET_RESERVATION_SUCCESS = 'GET_RESERVATION_SUCCESS';
@@ -12,7 +13,6 @@ const GET_RESERVATION_BY_ID_FAIL = 'GET_RESERVATION_BY_ID_FAIL';
 const DELETE_RESERVATION_REQUEST = 'DELETE_RESERVATION_REQUEST';
 const DELETE_RESERVATION_SUCCESS = 'DELETE_RESERVATION_SUCCESS';
 const DELETE_RESERVATION_FAIL = 'DELETE_RESERVATION_FAIL';
-
 
 const CREATE_RESERVATION = 'endpoint-mock/CREATE_RESERVATION';
 const RESERVATION_STATUS = 'endpoint-mock/RESERVATION_STATUS';
@@ -52,7 +52,9 @@ export const deleteReservationAction = (id) => async (dispatch, getState) => {
   }
 };
 
-export const myReservationsReducer = (state = { loading: true, reservations: null, error: null }, action) => {
+/* eslint-disable */
+export const myReservationReducer = (state = { loading: true, reservations: null, error: null },
+  action) => {
   switch (action.type) {
     case GET_RESERVATION_SUCCESS:
       return { loading: true };
@@ -81,7 +83,8 @@ export const reservationReducer = (state = initialState, action) => {
   }
 };
 
-export const reservationDetailsReducer = (state = { loading: true, reservation: null, err: null }, action) => {
+export const reservationDetailsReducer = (state = { loading: true, reservation: null, err: null },
+  action) => {
   switch (action.type) {
     case GET_RESERVATION_BY_ID_REQUEST:
       return { loading: true };
