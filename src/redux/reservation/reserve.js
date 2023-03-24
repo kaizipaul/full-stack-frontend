@@ -1,3 +1,5 @@
+import { baseUrl } from "../api";
+
 const GET_RESERVATION_REQUEST = 'GET_RESERVATION_REQUEST';
 const GET_RESERVATION_SUCCESS = 'GET_RESERVATION_SUCCESS';
 const GET_RESERVATION_FAIL = 'GET_RESERVATION_FAIL';
@@ -14,8 +16,6 @@ const DELETE_RESERVATION_FAIL = 'DELETE_RESERVATION_FAIL';
 
 const CREATE_RESERVATION = 'endpoint-mock/CREATE_RESERVATION';
 const RESERVATION_STATUS = 'endpoint-mock/RESERVATION_STATUS';
-
-const baseUrl = ''; // Awaiting contents from .env
 
 const initialState = {
   reservation_status: '',
