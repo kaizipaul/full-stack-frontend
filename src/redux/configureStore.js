@@ -11,6 +11,9 @@ const rootReducer = combineReducers({
   myReservation: myReservationReducer,
   reservationDetails: reservationDetailsReducer,
   cars: carReducer,
+  // delete: deleteCarReducer,
+  // auth: authReducer,
+  // newCar: newCarReducer,
 });
 
 const middlewares = [thunk];
