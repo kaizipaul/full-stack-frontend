@@ -1,0 +1,13 @@
+.footer {
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  list-style-type: none;
+  left: 0;
+}
+
+.footer-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
