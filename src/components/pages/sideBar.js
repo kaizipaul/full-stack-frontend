@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './sideBar.css';
 import SidebarData from './sidebarData';
+import Icons from './pages/icons';
 
 function SideBar() {
   return (
@@ -19,7 +20,7 @@ function SideBar() {
           ))}
         </ul>
       </nav>
-
+      <Icons />
     </div>
   );
 }
