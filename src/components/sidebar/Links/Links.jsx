@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -7,7 +6,7 @@ import { navLinks } from '../SidebarData';
 import './links.css';
 import { logout } from '../../../redux/auth/auth';
 
-function Links() {
+const Links = () => {
   const dispatch = useDispatch();
 
   const handleLogout = () => {
@@ -33,6 +32,6 @@ function Links() {
       </ul>
     </IconContext.Provider>
   );
-}
+};
 
 export default Links;
