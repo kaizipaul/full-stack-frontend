@@ -24,10 +24,10 @@
 .back-for-cars {
   position: absolute;
   height: 18rem;
-  width: 19rem;
+  width: 18rem;
   z-index: -111111111;
   top: 11%;
-  border-radius: 50%;
+  border-radius: 48%;
   opacity: 0.5;
 }
 
