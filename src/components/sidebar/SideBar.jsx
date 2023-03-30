@@ -1,3 +1,4 @@
+<
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
 import * as RxIcons from 'react-icons/rx';
@@ -9,7 +10,7 @@ const SideBar = () => {
   const [sidebar, setSidebar] = useState(true);
 
   const toggleSidebar = () => {
-    setSidebar(!sidebar);
+    setSidebar(!sidebar
     const toggleBtn = document.querySelector('.toggle-sidebar-btn');
     toggleBtn.classList.toggle('move');
   };
@@ -33,6 +34,7 @@ const SideBar = () => {
         onClick={toggleSidebar}
       >
         <RxIcons.RxHamburgerMenu size="2.5em" />
+
       </button>
     </div>
   );
