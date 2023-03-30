@@ -1,28 +1,27 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { userReducer } from './user/user';
-import { reservationDetailsReducer, reservationReducer, myReservationReducer } from './reservation/reserve';
-import fetchCars, { carReducer } from './cars/car';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
+// import { carsReducer } from './cars/carsView';
+import reservationReducer from './reservation/reserve';
+import createCarReducer from './newCar/car';
+import deleteCarReducer from './deleteCar/deleteCar';
+import { authReducer } from './auth/auth';
+
+const token = localStorage.getItem('token');
+const initialState = {
+  auth: {
+    token: token || null,
+    isAuthenticated: !!token,
+  },
+};
 
 const rootReducer = combineReducers({
-  user: userReducer,
-  reservationReducer,
-  myReservation: myReservationReducer,
-  reservationDetails: reservationDetailsReducer,
-  cars: carReducer,
-  // delete: deleteCarReducer,
-  // auth: authReducer,
-  // newCar: newCarReducer,
+  // cars: carsReducer,
+  newcar: createCarReducer,
+  auth: authReducer,
+  delete: deleteCarReducer,
+  reservations: reservationReducer,
 });
 
-const middlewares = [thunk];
-
-const store = createStore(
-  rootReducer,
-  composeWithDevTools(applyMiddleware(...middlewares)),
-);
-
-store.dispatch(fetchCars());
-
-export default store;
+export default configureStore({
+  reducer: rootReducer,
+  preloadedState: initialState,
+});
