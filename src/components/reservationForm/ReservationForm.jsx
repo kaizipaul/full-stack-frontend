@@ -1,29 +1,30 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import Select from 'react-select';
-// import Modal from '../modal/Modal';
+import Modal from '../modal/Modal';
 import './reservationForm.css';
 
 const cities = [
-  { value: 'New York', label: 'New York' },
-  { value: 'Los Angeles', label: 'Los Angeles' },
-  { value: 'Oregon', label: 'Oregon' },
-  { value: 'Bradenton Beach', label: 'Bradenton Beach' },
-  { value: 'Charlottetown', label: 'Charlottetown' },
-  { value: 'Bangkog', label: 'Bangkog' },
+  { value: 'new-york', label: 'New York' },
+  { value: 'los-angeles', label: 'Los Angeles' },
+  { value: 'san-francisco', label: 'San Francisc' },
+  { value: 'bradenton-beach', label: 'Bradenton Beach' },
+  { value: 'charlottetown', label: 'Charlottetown' },
+  { value: 'bankog', label: 'Bankog' },
   { value: 'Beijing', label: 'Beijing' },
 ];
 
-const ReservationForm = () => {
-  // const [isModalOpen, setIsModalOpen] = useState(false);
+function ReservationForm() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState('');
 
-  // const handleModalOpen = () => {
-  //   setIsModalOpen(true);
-  // };
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
 
-  // const handleModalClose = () => {
-  //   setIsModalOpen(false);
-  // };
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="container">
@@ -51,7 +52,6 @@ const ReservationForm = () => {
             value={selectedCity}
             onChange={setSelectedCity}
             placeholder="Select a City..."
-            required
             styles={{
               control: (provided) => ({
                 ...provided,
@@ -70,26 +70,21 @@ const ReservationForm = () => {
                 ...provided,
                 color: 'white',
               }),
-              menu: (provided) => ({
-                ...provided,
-                zIndex: 100,
-                width: '200px',
-              }),
             }}
           />
 
-          {/* <button
+          <button
             id="book_now"
             type="button"
             style={{ marginLeft: '1rem' }}
             onClick={handleModalOpen}
           >
             Book Now
-          </button> */}
+          </button>
         </div>
 
       </div>
-      {/* {isModalOpen && (
+      {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
             <button className="cls-m-btn" type="button" onClick={handleModalClose}>X</button>
@@ -97,9 +92,9 @@ const ReservationForm = () => {
             <Modal selectedCity={selectedCity.value} setIsModalOpen={setIsModalOpen} />
           </div>
         </div>
-      )} */}
+      )}
     </div>
   );
-};
+}
 
 export default ReservationForm;
