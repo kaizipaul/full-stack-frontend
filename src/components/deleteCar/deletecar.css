@@ -3,7 +3,7 @@
   height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-image: url(https://cdn.pixabay.com/photo/2016/06/25/10/49/seat-128-1478647_960_720.png);
+  background-image: url(../../assets/delete-car.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -39,7 +39,7 @@
 }
 
 .images {
-  width: 100px; /* adjust to yosur desired size */
+  width: 100px;
 }
 
 .del-car-image {
@@ -66,6 +66,22 @@
 }
 
 .trash {
-  width: 50px;
-  height: 50px;
+  margin-top: 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .del-container {
+    margin-top: 5rem;
+    height: auto;
+  }
+
+  .del-list {
+    width: 92%;
+  }
+
+  .del-car-image {
+    margin-left: 0;
+  }
 }

@@ -42,7 +42,6 @@ export const navLinks = [
     path: '/delete-car',
     cName: 'sidebar-link',
   },
-
   {
     id: 6,
     title: 'LOGOUT',
@@ -51,7 +50,6 @@ export const navLinks = [
     cName: 'sidebar-link logout-btn',
     action: 'logout',
   },
-
 ];
 
 export const socialLinks = [
