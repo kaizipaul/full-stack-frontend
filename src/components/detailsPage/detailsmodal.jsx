@@ -6,7 +6,7 @@ import Select from 'react-select';
 import PropTypes from 'prop-types';
 import './modal.css';
 import { useNavigate } from 'react-router-dom';
-import { addReservation, fetchReservations } from '../../redux/reservation/reserve';
+import { addReservation, fetchReservations } from '../../redux/reservations/reservation';
 
 const cities = [
   { value: 'new-york', label: 'New York' },
