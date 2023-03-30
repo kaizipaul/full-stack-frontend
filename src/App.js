@@ -1,13 +1,19 @@
 import React from 'react';
 import './App.css';
-import SideBar from './components/sidebar/SideBar';
+import { useSelector } from 'react-redux';
+import AuthenticatedRoute from './routes/AuthenticatedRoute';
+import UnAuthenticatedRoute from './routes/UnAuthenticatedRoute';
 
 function App() {
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   return (
     <div className="app">
-      <div className="d-flex flex-row">
-        <SideBar />
-      </div>
+
+      {!isAuthenticated ? (
+        <UnAuthenticatedRoute />
+      ) : (
+        <AuthenticatedRoute />
+      )}
     </div>
   );
 }

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import * as GiIcons from 'react-icons/gi';
 import * as IoIcons from 'react-icons/io';
@@ -40,6 +41,14 @@ export const navLinks = [
     icon: <RiIcons.RiDeleteBack2Line />,
     path: '/delete-car',
     cName: 'sidebar-link',
+  },
+  {
+    id: 6,
+    title: 'LOGOUT',
+    icon: <RiIcons.RiDeleteBack2Line />,
+    path: '/',
+    cName: 'sidebar-link logout-btn',
+    action: 'logout',
   },
 ];
 

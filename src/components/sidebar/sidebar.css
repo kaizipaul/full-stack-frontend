@@ -2,15 +2,13 @@
 
 .sidebar-container {
   height: 100vh;
-  position: relative;
-  left: -240px;
-  transition: 200ms ease-in-out;
+  width: fit-content;
+  visibility: hidden;
+  z-index: 99999;
 }
 
 .sidebar-active {
-  height: 100vh;
-  position: relative;
-  left: 0;
+  visibility: visible !important;
 }
 
 .sidebar-title {
@@ -22,9 +20,6 @@
 }
 
 .toggle-sidebar-btn {
-  position: absolute;
-  bottom: 78px;
-  right: -59px;
   background-color: #98c10f;
   width: 76px;
   border-bottom-right-radius: 40px;
@@ -33,5 +28,31 @@
   display: flex;
   justify-content: flex-end;
   border: none;
-  padding: 8px 0;
+  padding-right: 1rem;
+  z-index: 999999999;
+  box-shadow: -1px 4px 5px 0 rgba(42, 43, 42, 0.769);
+  -webkit-box-shadow: -1px 4px 5px 0 rgba(25, 26, 25, 0.64);
+  -moz-box-shadow: -1px 4px 5px 0 rgba(38, 38, 36, 0.703);
+  visibility: visible !important;
+  position: fixed;
+  bottom: 10%;
+  left: 15rem;
+}
+
+.toggle-sidebar-btn.move {
+  left: 0;
+}
+
+.logout-btn {
+  margin-top: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-container {
+    display: none !important;
+  }
+
+  .toggle-sidebar-btn {
+    display: none !important;
+  }
 }

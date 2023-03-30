@@ -1,8 +1,5 @@
 .app {
-  margin: 0;
-  display: block;
-  height: auto;
-  background-color: #e3e3e3;
+  display: flex;
 }
 
 ul {
