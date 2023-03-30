@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { userReducer } from './user/user';
-import { reservationDetailsReducer, reservationReducer, myReservationReducer } from './reservation/reserve.'
+import { reservationDetailsReducer, reservationReducer, myReservationReducer } from './reservations/reservation';
 import fetchCars, { carReducer } from './cars/car';
 
 const rootReducer = combineReducers({
