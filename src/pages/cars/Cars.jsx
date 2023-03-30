@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import * as RxIcons from 'react-icons/rx';
-import { getCars } from '../../redux/cars/cars';
+import { getCars } from '../../redux/newCar/car';
 import CarCard from './CarCard/CarCard';
 import './cars.css';
 
