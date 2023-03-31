@@ -42,7 +42,7 @@ const SignupForm = () => {
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Control
             type="name"
-            placeholder="Enter your name"
+            placeholder="please Enter your name"
             value={name}
             onChange={(event) => setName(event.target.value)}
             required
@@ -51,7 +51,7 @@ const SignupForm = () => {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
             type="email"
-            placeholder="Enter email"
+            placeholder="please Enter email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             required
@@ -61,7 +61,7 @@ const SignupForm = () => {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control
             type="password"
-            placeholder="Password"
+            placeholder="please Password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             required
@@ -69,8 +69,8 @@ const SignupForm = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formConfirmPassword">
           <Form.Control
-            type="your password"
-            placeholder="your Password Confirmation"
+            type="password"
+            placeholder="please your Password Confirmation"
             value={confirmPassword}
             onChange={(event) => setConfirmPassword(event.target.value)}
             required
