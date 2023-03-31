@@ -14,7 +14,7 @@
   box-shadow: 1px 4px 8px 2px;
   height: max-content;
   width: 60%;
-  background-color: rgb(201, 175, 175);
+  background-color: rgb(189, 165, 165);
   z-index: 100;
 }
 
@@ -31,7 +31,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(144, 89, 6, 0.829);
+  background-color: rgba(133, 82, 6, 0.829);
 }
 
 .center {
@@ -48,7 +48,7 @@
 }
 
 .no-reservations {
-  color: white;
+  color: rgb(241, 241, 241);
   z-index: 99999;
   font-size: 3rem;
   padding-top: 6rem;

@@ -33,7 +33,7 @@ const LoginForm = () => {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
             type="email"
-            placeholder="Enter your email"
+            placeholder="please Enter your email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             required
@@ -43,7 +43,7 @@ const LoginForm = () => {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control
             type="password"
-            placeholder="enter your Password"
+            placeholder="please enter your Password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             required
