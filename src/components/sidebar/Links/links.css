@@ -4,7 +4,7 @@
   font-size: 1.4rem;
   font-weight: 500;
   font-family: 'Tajawal', sans-serif;
-  color: #413c3c;
+  color: #4e4949;
   width: max-content;
 }
 
@@ -15,8 +15,8 @@
 
 .sidebar-link-box:hover,
 .sidebar-link-box:hover * {
-  background-color: #775708;
-  color: white !important;
+  background-color: #6d5007;
+  color: rgb(247, 239, 239) !important;
 }
 
 .link-name {
