@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
@@ -16,9 +17,10 @@ const initialState = {
 
 export const login = (reqBody) => async (dispatch) => {
   try {
-    const token = await getToken(reqBody);
-    localStorage.setItem('token', token);
-    dispatch({ type: LOGIN_SUCCESS, payload: token });
+    const data = await getToken(reqBody);
+    localStorage.setItem('token', data.token);
+    localStorage.setItem('current_user', data.name);
+    dispatch({ type: LOGIN_SUCCESS, payload: data.token });
   } catch (error) {
     dispatch({ type: LOGIN_FAIL, payload: error.message });
   }
@@ -27,6 +29,7 @@ export const login = (reqBody) => async (dispatch) => {
 export const logout = () => async (dispatch) => {
   localStorage.removeItem('token');
   dispatch({ type: LOGOUT });
+  toast.success('Logged out successfully');
 };
 
 export const signup = (reqBody) => async (dispatch) => {
