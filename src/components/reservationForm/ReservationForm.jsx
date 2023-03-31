@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Select from 'react-select';
 import Modal from '../modal/Modal';
 import './reservationForm.css';
 
 const cities = [
-  { value: 'new-york', label: 'New York' },
-  { value: 'los-angeles', label: 'Los Angeles' },
-  { value: 'san-francisco', label: 'San Francisc' },
-  { value: 'bradenton-beach', label: 'Bradenton Beach' },
-  { value: 'charlottetown', label: 'Charlottetown' },
-  { value: 'bankog', label: 'Bankog' },
+  { value: 'New York', label: 'New York' },
+  { value: 'Los Angeles', label: 'Los Angeles' },
+  { value: 'Oregon', label: 'Oregon' },
+  { value: 'Bradenton Beach', label: 'Bradenton Beach' },
+  { value: 'Charlottetown', label: 'Charlottetown' },
+  { value: 'Bangkog', label: 'Bangkog' },
   { value: 'Beijing', label: 'Beijing' },
 ];
 
-function ReservationForm() {
+const ReservationForm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState('');
 
@@ -52,6 +51,7 @@ function ReservationForm() {
             value={selectedCity}
             onChange={setSelectedCity}
             placeholder="Select a City..."
+            required
             styles={{
               control: (provided) => ({
                 ...provided,
@@ -69,6 +69,11 @@ function ReservationForm() {
               dropdownIndicator: (provided) => ({
                 ...provided,
                 color: 'white',
+              }),
+              menu: (provided) => ({
+                ...provided,
+                zIndex: 100,
+                width: '200px',
               }),
             }}
           />
@@ -95,6 +100,6 @@ function ReservationForm() {
       )}
     </div>
   );
-}
+};
 
 export default ReservationForm;
