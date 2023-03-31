@@ -9,11 +9,11 @@
 
 .rotate-image {
   transform: scaleX(-1);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .details-holder {
-  padding: 20px;
+  padding: 20.1px;
   flex-direction: row;
   display: flex;
   width: 100%;
@@ -25,12 +25,12 @@
   width: 100%;
   max-width: 550px;
   height: auto;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .circle {
   width: 100%;
-  max-width: 117px;
+  max-width: 117.1px;
   height: auto;
   margin-top: 20px;
 }
@@ -60,7 +60,7 @@
 }
 
 .discover {
-  color: black;
+  color: rgb(19, 18, 18);
   font-weight: 800;
   margin-top: 30px;
 }
@@ -73,7 +73,7 @@
 }
 
 .car-info button {
-  font-size: 23px;
+  font-size: 23.2px;
   margin-top: 50px;
   border-radius: 30px;
   float: right;
@@ -87,13 +87,13 @@
 }
 
 .car-info li {
-  padding: 11px;
+  padding: 11.1px;
   font-weight: 500;
   font-size: larger;
 }
 
 .car-info li:nth-child(even) {
-  background-color: #8e8787;
+  background-color: #837c7c;
 }
 
 .-info {

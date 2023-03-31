@@ -73,7 +73,7 @@ const Modal = ({ selectedCar, setIsModalOpen }) => {
       <Select
         id="select-city"
         aria-labelledby="select_city"
-        placeholder="Select a city"
+        placeholder="please Select a city"
         className="select"
         options={cities}
         required
