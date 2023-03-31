@@ -33,7 +33,7 @@
 }
 
 .cars-container .pagination-btn {
-  background-color: #98c10f;
+  background-color: #635106;
   width: 76px;
   border-bottom-right-radius: 40px;
   border-top-right-radius: 40px;
@@ -65,7 +65,7 @@
   align-self: flex-end;
   padding-right: 3rem;
   font-size: 1.5rem;
-  color: #98c10f;
+  color: #462604;
 }
 
 @media only screen and (max-width: 768px) {

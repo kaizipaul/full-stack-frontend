@@ -16,15 +16,15 @@
   text-decoration: underline;
   transform: rotate(-15deg);
   text-align: center;
-  color: #4f4f4f;
+  color: #1b1515;
 }
 
 .toggle-sidebar-btn {
-  background-color: #98c10f;
+  background-color: #53050415;
   width: 76px;
   border-bottom-right-radius: 40px;
   border-top-right-radius: 40px;
-  color: white;
+  color: rgb(99, 78, 78);
   display: flex;
   justify-content: flex-end;
   border: none;

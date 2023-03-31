@@ -15,11 +15,11 @@
   }
 
   .hamburger-btn {
-    color: aliceblue !important;
+    color: rgb(122, 107, 6) !important;
     outline: none;
   }
 
   .hamburger-btn:focus {
-    outline: 2px;
+    outline: 2.1px;
   }
 }
