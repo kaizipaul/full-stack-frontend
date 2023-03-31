@@ -7,7 +7,7 @@
   .mob-nav {
     display: flex !important;
     flex-direction: row;
-    padding: 15px;
+    padding: 15.1px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -15,7 +15,7 @@
   }
 
   .hamburger-btn {
-    color: rgb(122, 107, 6) !important;
+    color: rgb(112, 98, 4) !important;
     outline: none;
   }
 

@@ -37,7 +37,7 @@ const ReservationForm = () => {
           </div>
         </div>
         <div className="title">
-          <h4>BOOK A TEST DRIVE WITH WHEEL-WIZARD</h4>
+          <h3>BOOK A TEST DRIVE WITH WHEEL-WIZARD</h3>
           <hr className="divider" />
           <p style={{ color: '#fff' }}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, blanditiis. lorem10
@@ -50,7 +50,7 @@ const ReservationForm = () => {
             options={cities}
             value={selectedCity}
             onChange={setSelectedCity}
-            placeholder="Select a City..."
+            placeholder="please Select a City..."
             required
             styles={{
               control: (provided) => ({
