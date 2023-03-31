@@ -15,10 +15,10 @@
 
 .sidebar-link-box:hover,
 .sidebar-link-box:hover * {
-  background-color: #6d5007;
-  color: rgb(247, 239, 239) !important;
+  background-color: #7e5c08;
+  color: rgb(236, 232, 232) !important;
 }
 
 .link-name {
-  color: #4f4f4f;
+  color: #5c5b5b;
 }
