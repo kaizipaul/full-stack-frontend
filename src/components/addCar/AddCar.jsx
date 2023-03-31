@@ -25,7 +25,7 @@ const AddCar = () => {
     event.preventDefault();
     setIsLoading(true);
     if (!carData.image) {
-      toast.error('Please select an image for the car');
+      toast.error('Please select an image for the cars you see');
       setIsLoading(false);
       return;
     }
@@ -71,7 +71,7 @@ const AddCar = () => {
           <input
             type="text"
             name="name"
-            placeholder="Enter Car name"
+            placeholder="please Enter Car name"
             value={carData.name}
             onChange={handleInputChange}
             autoComplete="off"
@@ -86,7 +86,7 @@ const AddCar = () => {
             name="description"
             onChange={handleInputChange}
             className="w-full form-control"
-            placeholder="Description"
+            placeholder="your Description"
             required
           />
         </div>
@@ -94,7 +94,7 @@ const AddCar = () => {
           <input
             type="number"
             value={carData.test_drive_fee}
-            placeholder="Test Drive Fee"
+            placeholder="your Test Drive Fee"
             name="test_drive_fee"
             onChange={handleInputChange}
             className="form-control"
@@ -116,7 +116,7 @@ const AddCar = () => {
           <input
             type="number"
             value={carData.price}
-            placeholder="Price"
+            placeholder="the Price"
             name="price"
             onChange={handleInputChange}
             className="form-control"

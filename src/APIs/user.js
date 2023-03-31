@@ -18,11 +18,11 @@ export const getToken = async (reqBody) => {
     const response = await axios.post(`${URL}/users/sign_in`, {
       user: reqBody,
     });
-    toast.success('Logged in successfully');
+    toast.success('you Logged in successfully');
     return response.data;
   } catch (error) {
     if (error.response.status === 401) {
-      toast.error('Invalid email or password');
+      toast.error('sorry! Invalid email or password');
     }
     throw new Error(error);
   }

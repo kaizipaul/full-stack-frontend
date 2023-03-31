@@ -28,12 +28,12 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 33, 31, 0.929);
+  background-color: rgba(61, 61, 56, 0.929);
 }
 
 .add-car-form {
   width: 50%;
-  background-color: rgb(202, 190, 190);
+  background-color: rgb(192, 176, 176);
   margin-top: 100px;
   height: max-content;
   box-shadow: -1px 4px 5px 0 rgba(42, 43, 42, 0.64);
