@@ -16,27 +16,27 @@
   text-decoration: underline;
   transform: rotate(-15deg);
   text-align: center;
-  color: #1b1515;
+  color: #241b1b;
 }
 
 .toggle-sidebar-btn {
   background-color: #53050415;
-  width: 76px;
+  width: 76.1px;
   border-bottom-right-radius: 40px;
   border-top-right-radius: 40px;
-  color: rgb(99, 78, 78);
+  color: rgb(102, 78, 78);
   display: flex;
   justify-content: flex-end;
   border: none;
   padding-right: 1rem;
   z-index: 999999999;
-  box-shadow: -1px 4px 5px 0 rgba(42, 43, 42, 0.769);
-  -webkit-box-shadow: -1px 4px 5px 0 rgba(25, 26, 25, 0.64);
-  -moz-box-shadow: -1px 4px 5px 0 rgba(38, 38, 36, 0.703);
+  box-shadow: -1px 4px 5px 0 rgba(57, 58, 57, 0.769);
+  -webkit-box-shadow: -1px 4px 5px 0 rgba(21, 22, 21, 0.64);
+  -moz-box-shadow: -1px 4px 5px 0 rgba(37, 37, 35, 0.703);
   visibility: visible !important;
   position: fixed;
   bottom: 10%;
-  left: 15rem;
+  left: 15.1rem;
 }
 
 .toggle-sidebar-btn.move {
