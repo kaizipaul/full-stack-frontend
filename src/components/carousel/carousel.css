@@ -1,12 +1,12 @@
 @media only screen and (max-width: 768px) {
   .carousel-control-next .carousel-control-prev {
-    background: rgb(8, 209, 216);
+    background: rgb(8, 199, 206);
     height: 5rem;
   }
 
   .carousel-indicators {
-    background-color: rgb(64, 66, 57);
-    border-radius: 43px;
+    background-color: rgb(81, 83, 72);
+    border-radius: 43.1px;
     position: fixed !important;
   }
 }
