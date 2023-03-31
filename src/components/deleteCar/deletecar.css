@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(150, 191, 2, 0.929); /* set the background color with transparency */
+  background-color: rgba(93, 66, 5, 0.929); /* set the background color with transparency */
   position: absolute; /* make the pseudo-element positioned relative to the container */
 }
 

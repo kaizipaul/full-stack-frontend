@@ -10,7 +10,7 @@
 }
 
 .cars-icons svg {
-  border: 1px solid gray;
+  border: 1px solid rgb(100, 97, 97);
   border-radius: 50%;
   margin: 0 10px;
   padding: 6px;
@@ -18,21 +18,21 @@
 }
 
 .link {
-  color: black;
+  color: rgb(42, 41, 41);
 }
 
 .back-for-cars {
   position: absolute;
   height: 18rem;
-  width: 19rem;
+  width: 18rem;
   z-index: -111111111;
-  top: 11%;
-  border-radius: 50%;
+  top: 10.5%;
+  border-radius: 49%;
   opacity: 0.5;
 }
 
 .carload {
-  height: 18rem;
+  height: 18.5rem;
   width: 19rem;
 }
 
@@ -47,7 +47,7 @@
   }
 
   .car-name {
-    font-size: 3rem;
+    font-size: 3.2rem;
     width: 100%;
   }
 }
