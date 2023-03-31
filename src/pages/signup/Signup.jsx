@@ -38,7 +38,7 @@ const SignupForm = () => {
   return (
     <div className="form-cont">
       <Form className="login-form" onSubmit={handleSubmit}>
-        <h1 className="sidebar-title-signup pt-3 ml-5">WheelWizard</h1>
+        <h2 className="sidebar-title-signup pt-3 ml-5">WheelWizard</h2>
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Control
             type="name"
@@ -69,8 +69,8 @@ const SignupForm = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formConfirmPassword">
           <Form.Control
-            type="password"
-            placeholder="Password Confirmation"
+            type="your password"
+            placeholder="your Password Confirmation"
             value={confirmPassword}
             onChange={(event) => setConfirmPassword(event.target.value)}
             required

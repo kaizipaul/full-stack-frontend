@@ -29,11 +29,11 @@ const LoginForm = () => {
   return (
     <div className="form-cont">
       <Form className="login-form" onSubmit={handleSubmit}>
-        <h1 className="sidebar-title-signup pt-3 ml-5">WheelWizard</h1>
+        <h2 className="sidebar-title-signup pt-3 ml-5">WheelWizard</h2>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
             type="email"
-            placeholder="Enter email"
+            placeholder="Enter your email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             required
@@ -43,7 +43,7 @@ const LoginForm = () => {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control
             type="password"
-            placeholder="Password"
+            placeholder="enter your Password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             required
