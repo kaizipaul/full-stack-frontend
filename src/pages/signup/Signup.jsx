@@ -33,7 +33,7 @@ const SignupForm = () => {
     if (success) {
       navigate('/login');
     }
-  }, [success]);
+  }, [navigate, success]);
 
   return (
     <div className="form-cont">

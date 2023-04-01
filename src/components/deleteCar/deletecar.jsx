@@ -11,7 +11,7 @@ const RemoveCar = () => {
 
   useEffect(() => {
     dispatch(getAllCars());
-  }, []);
+  }, [dispatch]);
   const { cars, loading, error } = useSelector((state) => state.delete);
 
   const handledelete = (carId) => {

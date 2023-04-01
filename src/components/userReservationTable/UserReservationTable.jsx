@@ -32,7 +32,7 @@ const UserReservationTable = () => {
   useEffect(() => {
     dispatch(getCars());
     dispatch(fetchReservations());
-  }, []);
+  }, [dispatch]);
 
   const handleCancelClick = (id) => {
     setIsLoading(true);
